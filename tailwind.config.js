@@ -6,6 +6,8 @@ export default {
       backgroundImage: {
         "main-desktop": "url('/src/images/bg-main-desktop.png')",
         "main-mobile": "url('/src/images/bg-main-mobile.png')",
+        "card-back": "url('/src/images/bg-card-back.png')",
+        "card-front": "url('/src/images/bg-card-front.png')",
       },
       colors: {
         red: "hsl(0, 100%, 66%)",

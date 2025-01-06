@@ -9,3 +9,12 @@
     font-family: "Space Grotesk", serif;
   }
 }
+
+input:focus {
+  outline: none;
+  border: 1px solid transparent;
+  background-image: linear-gradient(white, white),
+    linear-gradient(135deg, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}

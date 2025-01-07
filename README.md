@@ -8,8 +8,8 @@ This is a solution to the [Interactive card details form challenge on Frontend M
 
 ### Links
 
-- Solution URL: [Solution URL here](https://github.com/NDK1195/intro-component-with-signup-form)
-- Live Site URL: [Live site URL here](https://intro-component-with-signup-form-blue-tau.vercel.app/)
+- Solution URL: [Solution URL here](https://github.com/NDK1195/interactive-card-details-form)
+- Live Site URL: [Live site URL here](https://interactive-card-details-form-blue-two.vercel.app/)
 
 ### Built with
 

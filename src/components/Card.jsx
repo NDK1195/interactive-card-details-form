@@ -1,14 +1,14 @@
 import bgCardBack from "../images/bg-card-back.png";
 import bgCardFront from "../images/bg-card-front.png";
 import cardLogo from "../images/card-logo.svg";
-function Card() {
+function Card({ cardData }) {
   return (
     <>
       {/*  card back */}
       <div className="relative left-7 top-8 mx-auto max-w-[286px] lg:left-[258px] lg:top-[469px] lg:mx-0 lg:max-w-[447px]">
         <img src={bgCardBack} alt="background card back" />
         <span className="absolute right-9 top-[74px] text-[9px] font-medium leading-none tracking-[1.286px] text-white lg:right-[57px] lg:top-[111px] lg:text-sm lg:tracking-[2px]">
-          000
+          {cardData.cvc ? cardData.cvc : "000"}
         </span>
       </div>
       {/*  card back */}
@@ -23,11 +23,18 @@ function Card() {
             className="mb-[37px] w-14 lg:mb-16 lg:w-[84px]"
           />
           <p className="mb-[17px] text-lg font-medium leading-none tracking-[2.2px] lg:mb-[25.5px] lg:text-[28px] lg:tracking-[3.422px]">
-            0000 0000 0000 0000
+            {cardData.number ? cardData.number : "0000 0000 0000 0000"}
           </p>
           <div className="flex items-center justify-between text-[9px] font-medium uppercase leading-none tracking-[1.286px] lg:text-sm lg:tracking-[2px]">
-            <h1>JANE APPLESEED</h1>
-            <p>00/00</p>
+            <h1>{cardData.name ? cardData.name : "JANE APPLESEED"}</h1>
+            <p>
+              {cardData.month
+                ? Number(cardData.month) < 10
+                  ? `0${Number(cardData.month)}`
+                  : cardData.month
+                : "00"}
+              /{cardData.year ? cardData.year : "00"}
+            </p>
           </div>
         </div>
       </div>
